@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Front End Developer"];
+  const toRotate = ["Front End Developer."];
   const [text, setText] = useState("");
   const period = 2000;
   const [delta, setDelta] = useState(300 - Math.random * 100);
@@ -52,19 +52,18 @@ export const Banner = () => {
               Hi I,m <span className="wrap">{text}</span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel sed
-              ullam, corporis accusamus id totam deleniti non at et
-              exercitationem, ipsum a voluptates facilis rem quia ex? Sint, enim
-              voluptatibus.
+              Hello, and thank you for visiting my portfolio! I'm Himanshu Mewari, a
+              passionate Front-End Developer with a flair for creating dynamic
+              and engaging web experiences.
             </p>
-            <a href="#connect" style={{textDecoration:"none"}}>
+            <a href="#connect" style={{ textDecoration: "none" }}>
               <button>
                 Let,s connect <ArrowRightCircle size={25} />
               </button>
             </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerimg} alt="Headerimage" style={{width:'110%'}} />
+            <img src={headerimg} alt="Headerimage" style={{ width: "110%" }} />
           </Col>
         </Row>
       </Container>
